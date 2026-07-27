@@ -15,10 +15,10 @@ void main() {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(
-                "android/assets/images/profile.jpeg",
-                width: 90,
-                height: 90,
+              CircleAvatar(
+                radius: 45,
+                backgroundImage:
+                    AssetImage("android/assets/images/profile.jpeg"),
               ),
               const SizedBox(width: 40),
               Column(
